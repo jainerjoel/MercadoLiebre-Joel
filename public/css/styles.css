@@ -238,6 +238,24 @@ article div.main-article{
     width: 100%;
 }
 
+main section article {
+    transition: all 400ms;
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transform: scale(1.02);
+}
+
+main section article .description{
+    display: block;
+    visibility: hidden;
+}  
+
+article:hover .description {
+    visibility: visible;
+}
+
 @media (min-width: 480px){
 
     .footer {
@@ -265,24 +283,7 @@ article div.main-article{
         width: 260px;
         justify-content: space-between;
     }
-    
-    main section article .description{
-        display: block;
-        visibility: hidden;
-    }  
 
-    article:hover .description {
-        visibility: visible;
-    }
-
-    main section article {
-        transition: all 400ms;
-    }
-
-    main section article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        transform: scale(1.02);
-    }
 
     main section div.products{
         display: flex;
